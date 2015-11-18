@@ -1,0 +1,9 @@
+! For rxvt Unicode
+!! Terminal colors
+URxvt.depth:      32
+URxvt.background: rgba:1111/1111/1111/dddd
+URxvt.foreground: white
+!! For man pages
+URxvt.colorIT:    #87af5f
+URxvt.colorBD:    #d7d7d7
+URxvt.colorUL:    #87afd7

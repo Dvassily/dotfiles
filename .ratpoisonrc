@@ -1,0 +1,22 @@
+# rpws configuration
+exec /usr/bin/rpws init 4 -k
+exec nitrogen --restore
+exec xcompmgr -c
+
+# key bindings
+definekey top XF86AudioRaiseVolume exec amixer -c 1 -q set PCM 5+ unmute; ratpoison -c "echo $(amixer -c 1 get PCM | grep "%" | head -n 1 | awk '{print $5}' | sed 's/[^0-9\%]//g')"
+definekey top XF86AudioLowerVolume exec amixer -c 1 -q set PCM 5- unmute; ratpoison -c "echo $(amixer -c 1 get PCM | grep "%" | head -n 1 | awk '{print $5}' | sed 's/[^0-9\%]//g')"
+definekey top XF86AudioMute exec amixer -c 1 -q set Master toggle; ratpoison -c "echo [ MUTE ]"
+
+#bind f exec firefox
+bind f exec chromium
+bind x exec xterm
+bind u exec urxvt
+bind z exec ratpoison -c "echo `acpi | awk '{print $4, $3, $5}'`"
+bind e exec urxvt -e emacs -nw
+bind M exec urxvt -e alsamixer --card=1
+bind M-u exec /home/basil/Scripts/ratpoison/open-term.sh
+bind M-a exec /home/basil/Scripts/ratpoison/cal.sh
+bind M-r exec /home/basil/Scripts/ratpoison/close-and-remove.sh
+bind M-s exec /home/basil/Scripts/ratpoison/third-split.sh
+

@@ -1,0 +1,40 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("island_git"
+ (filename . "~/Projets/GL/git/private/")
+ (front-context-string . ".git\n  -rw-r--r-")
+ (rear-context-string . " 17 nov.  15:55 ")
+ (position . 234))
+("dissimulation"
+ (filename . "~/Projets/Ingwaz/git/private/dissimulation/")
+ (front-context-string . "build\n  -rw-r--r")
+ (rear-context-string . "  4 nov.  15:24 ")
+ (position . 252))
+("ingwaz-revelation"
+ (filename . "~/Projets/Ingwaz/git/private/revelation/")
+ (front-context-string . "build\n  -rw-r--r")
+ (rear-context-string . "  6 nov.  18:36 ")
+ (position . 252))
+("Xresources"
+ (filename . "~/.Xresources")
+ (front-context-string)
+ (rear-context-string . "rUL:    #87afd7\n")
+ (position . 222))
+("xinitrc"
+ (filename . "~/.xinitrc")
+ (front-context-string . "xrdb ~/.Xresourc")
+ (rear-context-string)
+ (position . 1))
+("rp-conf"
+ (filename . "~/.ratpoisonrc")
+ (front-context-string . "# rpws configura")
+ (rear-context-string)
+ (position . 1))
+("emacs-conf"
+ (filename . "~/.emacs")
+ (front-context-string . "\n;; functions\n(l")
+ (rear-context-string . "\n(server-start)\n")
+ (position . 43))
+)
