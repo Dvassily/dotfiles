@@ -28,3 +28,12 @@
 (emms-standard)
 (emms-default-players)
 (require 'emms-info)
+
+;; For ELPA
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+			 ("marmalade" . "https://marmalade-repo.org/packages/")
+			 ("melpa" . "https://melpa.org/packages/")))
+
+;; Other packages
+(add-to-list 'load-path "~/.emacs.d/xml-rpc-1.6.8")
+(add-to-list 'load-path "~/.emacs.d/jira-0.3.3")
