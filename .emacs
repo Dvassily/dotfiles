@@ -35,5 +35,9 @@
 			 ("melpa" . "https://melpa.org/packages/")))
 
 ;; Other packages
-(add-to-list 'load-path "~/.emacs.d/xml-rpc-1.6.8")
-(add-to-list 'load-path "~/.emacs.d/jira-0.3.3")
+(add-to-list 'load-path "~/.emacs.d/elpa/xml-rpc-1.6.8")
+(require 'xml-rpc)
+
+(add-to-list 'load-path "~/.emacs.d/elpa/jira-0.3.3")
+(require 'jira)
+
