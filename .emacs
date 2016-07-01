@@ -18,10 +18,16 @@
 (global-set-key (kbd "C-c o") 'openfileselect)
 (global-set-key (kbd "C-c c") 'html-close-balise)
 
-; Variables settings
-(set-variable 'c-basic-offset 4)
+;; Variables settings
+; C/C++ 
+(setq c-basic-offset '4)
+
+; General
+(setq column-number-mode t)
 (put 'upcase-region 'disabled nil)
 
+
+;; Packages
 ; For web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.php$" . php-setup))
@@ -41,10 +47,12 @@
 (emms-default-players)
 (require 'emms-info)
 
-;; variables
-; General
-(setq column-number-mode t)
+;; For ELPA
+(setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
+			 ("marmalade" . "https://marmalade-repo.org/packages/")
+			 ("melpa" . "https://melpa.org/packages/")))
 
-; C/C++ 
-(setq c-basic-offset '4)
+;; Other packages
+(add-to-list 'load-path "~/.emacs.d/xml-rpc-1.6.8")
+(add-to-list 'load-path "~/.emacs.d/jira-0.3.3")
 
