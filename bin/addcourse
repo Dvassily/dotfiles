@@ -1,0 +1,6 @@
+#/bin/bash
+
+mkdir $1
+cd $1
+mkdir S5 S6
+mkdir S5/TD S5/Cours S6/TD S6/Cours

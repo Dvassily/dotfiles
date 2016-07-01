@@ -1,0 +1,5 @@
+#!/bin/sh
+
+ratpoison -c "select -"
+ratpoison -c "nextscreen"
+ratpoison -c "over"

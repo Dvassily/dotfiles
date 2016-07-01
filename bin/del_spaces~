@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#
+#mv $1 $name;
+
+IFS_OLD=$IFS
+IFS=","
+for file in $(ls -F --format=commas -b | sed 's/\n//'); do
+    name=$(echo $file | tr ' ' '_')
+    mv $file $name;
+done
+IFS=$IFS_OLD
