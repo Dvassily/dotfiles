@@ -1,0 +1,16 @@
+CC=g++
+CFLAGS=-Wall
+LDFLAGS=-std=c++11
+EXEC=Analyseur
+INCLUDE=-I../include/
+
+all: $(EXEC)
+
+main.o: main.cxx ../include/CNode.h ../include/CNode.hxx
+	$(CC) -o main.o main.cxx $(CFLAGS) $(LDFLAGS) $(INCLUDE)
+
+$(EXEC):
+	$(CC) -o $(EXEC) main.cxx $(LDFLAGS) $(INCLUDE)
+
+clean:
+	rm -rf $(EXEC) *.o *~
