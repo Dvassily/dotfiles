@@ -1,6 +1,0 @@
-#!/bin/bash
-
-dest=$1
-cur=$(pwd)
-
-while [ $(pwd) -ne $dest ]

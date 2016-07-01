@@ -1,6 +1,0 @@
-#!/bin/bash
-for file in *; do
-    if [ $(cat $i | $1 | wc -l) -eq 1 ]; then
-	echo $i;
-    fi;
-done
