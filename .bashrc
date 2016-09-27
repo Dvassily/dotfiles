@@ -5,23 +5,26 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-alias lsb='ls -B'
-alias lsa='ls -al'
-PS1='[\u@\h \W]\$ '
-PATH=$PATH':/home/basil/Scripts'
+# variables persos
+export EDITOR='emacs -nw'
+export PS1='[\u@\h \W]\$ '
+export PATH=$PATH':/home/basil/bin'
+export GRAPH_ENV=ratpoison
 
 # alias persos
+alias rmr='rm -r'
 alias cpr='cp -r'
 alias emacs='emacs -nw'
 alias setxfce='GRAPH_ENV=xfce4-session'
 alias setratp='GRAPH_ENV=ratpoison'
-alias start43EE='startnet.sh wlp2s0-Livebox-43EE'
-alias alsamixer='alsamixer --card=1'
 alias mergexres='xrdb -merge ~/.Xresources'
 alias startwifi='sudo systemctl start netctl-auto@wlp2s0'
 alias pmsy='sudo pacman -Sy'
 alias pms='sudo pacman -S'
+alias ls='ls --color=auto'
+alias lsb='ls -B'
+alias lsa='ls -al'
+alias listtar='tar -tz <'
 
 # Color variables
 # Reset
@@ -102,6 +105,4 @@ On_IWhite='\e[0;107m'   # White
 #PS1="\ \[$BIRed\]\t\[$Color_Off] \ \u \ \[$BIBlue\]\W\[$Color_Off\] "
 PS1="\[$Green\]/ \[$Color_Off\]\[$BIRed\]\t\[$Color_Off\] \[$Green\]/ \[$Color_Off\] basil \[$Green\]/ \[$Color_Off\] \[$BIBlue\]\W\[$Color_Off\] "
 
-# variables persos
-GRAPH_ENV='xfce4-session'
-EDITOR='emacs -nw'
+
