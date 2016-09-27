@@ -1,3 +1,6 @@
+;; Author : Basil Dalié
+;; Last modified : 16/12/2015
+
 (load-file "~/.emacs.d/lisp/project-table.el")
 
 (setq project-loaded nil)
